@@ -8,9 +8,9 @@ with open('PRO-105_2.csv')as f :
 length = len(lists)
 
 def mean(lists) : 
-    total = 0
+    total = []
     for i in lists : 
-        total = total + int(i[1])
+        total.append(int(i[0]))
 
     half_mean = sum(total)
     
