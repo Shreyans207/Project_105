@@ -9,16 +9,16 @@ length = len(lists)
 
 def mean(lists) : 
     total = []
-    for i in lists : 
-        total.append(int(i[0]))
-
-    half_mean = sum(total)
+    for i in range(len(lists)) :
+        num = lists[i][i] 
+        total.append(float(num))
     
+    half_mean = sum(total)
+
     mean = half_mean/length
     return mean
     
 sigma_1 = []
-
 
 for i in lists : 
     number = int(i[1])
