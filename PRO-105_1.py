@@ -10,7 +10,7 @@ length = len(lists)
 def mean(lists) : 
     total = []
     for i in range(len(lists)) :
-        num = lists[i][i] 
+        num = lists[i][0] 
         total.append(float(num))
     
     half_mean = sum(total)
