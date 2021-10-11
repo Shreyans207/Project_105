@@ -6,19 +6,20 @@ with open('PRO-105_2.csv')as f :
     lists = list(reader)
 
 length = len(lists)
+total2 = []
 
 def mean(lists) : 
-    total = []
-    for i in range(len(lists)) :
-        num = lists[i][0] 
-        total.append(float(num))
-    
-    half_mean = sum(total)
 
+    for i in lists[0] :
+        num = i 
+        total2.append(num)
+
+    half_mean = sum(total2)
+    
     mean = half_mean/length
     return mean
-    
-sigma_1 = []
+
+sigma_1 = [] 
 
 for i in lists : 
     number = int(i[1])
